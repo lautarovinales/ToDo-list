@@ -1,0 +1,21 @@
+#button-reload, button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #6277ff;
+    color: #202020;
+    font-weight: 600;
+    width: 100%;
+    cursor: pointer;
+}
+
+#button-reload:hover, button:hover {
+    background-color: #8293fe;
+}
+
+#button-clear{
+    border: 1px solid #6277ff;
+    width: 100%;
+    background-color: #151515;
+    color: #6277ff;
+}

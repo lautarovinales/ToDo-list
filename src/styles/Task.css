@@ -1,0 +1,57 @@
+#task{
+    width: 100%;
+}
+
+#checkbox {
+  display: none;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: start;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: 1px solid #202020;
+}
+
+.custom-checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #202020;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+  border: 2px solid #202020;
+  transition: background-color 0.3s ease;
+}
+
+#checkbox:checked + .custom-checkbox {
+  background-color: #4655ba;
+}
+
+.custom-checkbox::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border: solid #202020;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  top: 2px;
+  left: 6px;
+  display: none;
+}
+
+#checkbox:checked + .custom-checkbox::after {
+  display: block;
+}
+
+#task-name {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
